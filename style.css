@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+} 
+a{
+    text-decoration: none;
+
+}
+body{
+    background: rgb(48, 56, 56);
+    background: linear-gradient(0deg, rgb(33, 54, 54) 0%, rgba(121,32,153,1) 86%);
+    background-attachment: fixed;
+    margin:0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+form{
+    width:400px;
+    margin:20vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:30px;
+}
+
+h1{
+    text-align: center;
+    color:#792099;
+}
+
+#form > .button{
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+}
+.button{
+    width: 100%;
+    background-color: #792099;
+    color:white;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+     text-align: center;
+}
+
+.input-group{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group input{
+    border-radius: 5px;
+    font-size:20px;
+    margin-top:5px;
+    padding:10px;
+    border:1px solid rgb(34,193,195) ;
+}
+
+.input-group input:focus{
+    outline:0;
+}
+
+.input-group .error{
+    color:rgb(242, 18, 18);
+    font-size:16px;
+    margin-top: 5px;
+}
+
+.input-group.success input{
+    border-color: #0cc477;
+}
+
+.input-group.error input{
+    border-color:rgb(206, 67, 67);
+}
+
+
+/* todo app */
+
+.container{
+    width:100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, red, pink);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #000;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
+h2{
+    color: whitesmoke;
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row > input {
+    border: 1 px solid white;
+    outline: none;
+    height: 40px;
+    width: 90%;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.row> button{
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: red;
+    
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+.row> button:hover{
+    background-color: pink;
+    color: red;
+
+}
+#list-container{
+    margin-top: 30px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 20px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    /* background-color: wheat; */
+    border-radius: 50%;
+    top:12px;
+    left: 8px;
+}
+ul li.checked{
+    color:gainsboro;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-color: gainsboro;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+}
+ul li span:hover{
+    border-radius: 10px;
+    background-color: gray;
+    color: white;
+}
